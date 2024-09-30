@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Montserrat } from 'next/font/google';
+
+const font = Montserrat({
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: "Gamer.store",
@@ -12,9 +17,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="bt-br">
       <body
-        className={}
+        className={font.className}
       >
         {children}
       </body>
