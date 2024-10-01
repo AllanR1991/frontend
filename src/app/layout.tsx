@@ -7,7 +7,7 @@ const font = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "Gamer.store",
+  title: "Gam3r.store",
   description: "A versão mais básica da loja de jogos",
 };
 
@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="bt-br">
+    <html lang="bt-BR">
       <body
         className={font.className}
       >

@@ -1,3 +1,7 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  // Adicionado regra para não acusar erro com e eslint do props: any;
+  "rules": {
+    "@typescript-eslint/no-explicit-any" : "off"
+  }
 }
